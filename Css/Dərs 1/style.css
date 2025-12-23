@@ -1,0 +1,32 @@
+
+#A1{
+    color: blue;
+}
+
+.A2{
+    color: blueviolet;
+}
+
+
+
+
+
+
+.body{
+    background-image: url(/7a29dfc903d98c6ba13b687ef1fa1d1a.jpg);
+    background-position-x: left;
+    background-color: aqua;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+
+
+
+}
+
+#Lorem1{
+    text-align: center;
+    text-decoration: none;
+    text-transform: lowercase;
+    line-height: 1.5px;
+    word-spacing: 4px;
+}
