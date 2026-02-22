@@ -337,7 +337,7 @@ body{
   object-fit: cover;
 }
 
-/* ========== SIDEBAR ========== */
+
 .sidebar{
   position: fixed;
   top: var(--topbar-h);
@@ -411,22 +411,22 @@ body{
   flex: 0 0 auto;
 }
 
-/* ========== MAIN ========== */
+
 .main{
   margin-left: var(--sidebar-w);
   padding: 22px;
   padding-top: calc(var(--topbar-h) + 22px);
   min-height: 100vh;
-  width: auto; /* VACİB: calc yoxdur -> boşluq problemi getdi */
+  width: auto; 
 }
 
-/* ========== GRID + CARDS ========== */
+
 .dashboard-grid{
   width: 100%;
-  margin: 0;                 /* 0 auto YOX */
+  margin: 0;                 
   display: grid;
   gap: 18px;
-  justify-content: stretch;  /* ortalama YOX */
+  justify-content: stretch; 
   align-content: start;
 }
 
@@ -568,7 +568,7 @@ body{
 @media (min-width: 769px) and (max-width: 1200px){
   :root{
     --sidebar-w: 240px;
-  }
+  } 
 
   .dashboard-grid{
     grid-template-columns: repeat(3, minmax(220px, 1fr));
@@ -588,4 +588,4 @@ body{
   }
 
   .card--wide{ grid-column: span 2; }
-}
+}}
