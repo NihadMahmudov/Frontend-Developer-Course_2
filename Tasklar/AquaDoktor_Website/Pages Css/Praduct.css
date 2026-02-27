@@ -1,0 +1,82 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#fff4e6;
+}
+
+.Container{
+    width:min(1400px,100%);
+    margin:0 auto;
+    padding:20px;
+
+    display:flex;
+    flex-direction:column;
+    gap:40px;
+}
+
+
+.mehsul_adi{
+    padding:15px;
+    font-weight:bold;
+    margin-bottom:15px;
+    border-radius: 12px;
+    border: 1px solid #ff7a00;
+    text-align: center;
+
+    background:#ff7a00;
+    color:white;
+}
+
+
+.mehsullar{
+    display:grid;
+    grid-template-columns:repeat(2,5fr);
+    gap:20px;
+}
+
+
+.mehsul{
+    display:flex;
+    gap:20px;
+    align-items:center;
+    height:200px;
+    border-radius:12px;
+    border:1px solid #ffb380;
+
+    background:white;
+}
+
+
+.mehsul img{
+    width:200px;
+    height:199px;
+    border-radius:10px;
+}
+
+
+.mehsul_text{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+}
+
+.mehsul_text h3{
+    margin-bottom:10px;
+    color:#ff7a00;
+}
+@media(max-width: 492px){
+    .mehsullar{
+    display:grid;
+    grid-template-columns:repeat(1,5fr);
+    gap:20px;
+   
+}
+.blok{
+    width:100%;
+  }
+
+}

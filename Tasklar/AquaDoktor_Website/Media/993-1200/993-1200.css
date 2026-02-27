@@ -1,0 +1,5 @@
+@media (min-width: 993px) and (max-width: 1200px){
+  .layout{ padding:18px; }
+  .cards{ grid-template-columns: repeat(4, 1fr); }
+  .animBox{ height:260px; }
+}

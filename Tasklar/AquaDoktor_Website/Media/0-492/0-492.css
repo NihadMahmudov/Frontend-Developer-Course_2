@@ -1,0 +1,18 @@
+@media (max-width: 492px){
+  .layout{ padding:12px; }
+
+  .nav{
+    flex-direction:column;
+    gap:10px;
+    padding:12px; 
+  }
+
+  .menu{
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:12px;
+  }
+
+  .cards{ grid-template-columns: 1fr; }
+  .animBox{ height:180px; }
+}
