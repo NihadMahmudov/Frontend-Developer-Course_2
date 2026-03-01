@@ -13,6 +13,6 @@
     gap:12px;
   }
 
-  .cards{ grid-template-columns: 1fr; }
+  .cards{ grid-template-columns:repeat(1,1fr); }
   .animBox{ height:180px; }
 }
