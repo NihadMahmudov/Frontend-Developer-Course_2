@@ -5,21 +5,19 @@
 }
 
 body {
-  width: 100vw;
-  height: 100vh;
+  min-height: 100vh;
   background: #F9FAFB;
   color: #1F2937;
-
 }
 
 
 .layout {
-  width: 100vw;
+  max-width: 1400px;
   margin: 0 auto;
-  padding: 12px;
+  padding: 16px;
 
   display: grid;
-  gap: 12px;
+  gap: 16px;
 
   grid-template-areas:
     "nav"

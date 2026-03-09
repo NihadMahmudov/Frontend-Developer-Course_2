@@ -1,591 +1,107 @@
-/* ================== ROOT ================== */
-:root{
-  --topbar-h: 64px;
-  --sidebar-w: 260px;
-
-  --page-bg: #f5f7fb;
-  --border: #e5e7eb;
-
-  --sidebar-bg: #151a3a;
-  --sidebar-text: #c9d1ff;
-  --sidebar-muted: #7f86c6;
-
-  --card-bg: #ffffff;
-  --shadow: 0 10px 22px rgba(15, 23, 42, 0.06);
-}
-
-/* ================== RESET ================== */
-*{ box-sizing: border-box; }
-body{
-  margin: 0;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  background: var(--page-bg);
-  color: #111827;
-}
-
-/* ================== TOPBAR ================== */
-.topbar{
-  position: fixed;
-  top: 0; left: 0; right: 0;
-  height: var(--topbar-h);
-  background: #fff;
-  border-bottom: 1px solid var(--border);
-  display: grid;
-  grid-template-columns: 1fr minmax(200px, 760px) 1fr;
-  align-items: center;
-  gap: 12px;
-  padding: 0 18px;
-  z-index: 1000;
-}
-
-.brand{
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.brand-icon{
-  width: 34px;
-  height: 34px;
-  border-radius: 10px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: #eef2ff;
-  font-weight: 800;
-}
-.brand-text{
-  font-size: 26px;
-  font-weight: 900;
-  letter-spacing: .2px;
-}
-
-.search{
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  background: #f8fafc;
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 10px 12px;
-}
-.search input{
-  width: 100%;
-  border: none;
-  outline: none;
-  background: transparent;
-  font-size: 15px;
-}
-
-.topbar-right{
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 14px;
-}
-
-.icon-btn{
-  position: relative;
-  border: none;
-  background: transparent;
-  cursor: pointer;
-  font-size: 18px;
-  padding: 6px;
-}
-.notif-dot{
-  position: absolute;
-  top: 4px; right: 4px;
-  width: 8px; height: 8px;
-  background: #22c55e;
-  border-radius: 999px;
-  border: 2px solid #fff;
-}
-
-.user{
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.user-name{
-  font-weight: 600;
-}
-.avatar{
-  width: 34px; height: 34px;
-  border-radius: 999px;
-  object-fit: cover;
-}
-
-/* ================== SIDEBAR ================== */
-.sidebar{
-  position: fixed;
-  top: var(--topbar-h);
-  left: 0;
-  bottom: 0;
-  width: var(--sidebar-w);
-  background: var(--sidebar-bg);
-  color: var(--sidebar-text);
-  padding: 18px 14px;
-  overflow-y: auto;
-}
-
-.sidebar-section{
-  margin: 12px 10px 8px;
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: .12em;
-  color: var(--sidebar-muted);
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
 }
 
 .nav{
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  padding: 0 6px;
-}
-
-.nav-item{
-  text-decoration: none;
-  color: var(--sidebar-text);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  padding: 10px 12px;
-  border-radius: 10px;
-}
-.nav-item:hover{
-  background: rgba(255,255,255,.06);
-}
-.nav-item.active{
-  background: rgba(255,255,255,.08);
-  outline: 1px solid rgba(255,255,255,.08);
-}
-
-.nav-left{
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  min-width: 0;
-}
-.nav-ico{
-  width: 22px; height: 22px;
-  border-radius: 6px;
-  background: rgba(255,255,255,.10);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 12px;
-  flex: 0 0 22px;
-}
-.nav-label{
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-.nav-pill{
-  font-size: 11px;
-  padding: 2px 8px;
-  border-radius: 999px;
-  background: rgba(255,255,255,.12);
-  color: #fff;
-  flex: 0 0 auto;
-}
-
-/* ================== MAIN ================== */
-.main{
-  margin-left: var(--sidebar-w);
-  padding: 22px;
-  padding-top: calc(var(--topbar-h) + 22px);
-  min-height: 100vh;
-
-  /* solda boşluq problemi olmasın */
-  width: calc(100% - var(--sidebar-w));
-/* ========== BASE ========== */
-:root{
-  --topbar-h: 64px;
-  --sidebar-w: 260px;
-
-  --page-bg: #f5f7fb;
-  --border: #e5e7eb;
-
-  --sidebar-bg: #151a3a;
-  --sidebar-text: #c9d1ff;
-  --sidebar-muted: #7f86c6;
-
-  --card-bg: #ffffff;
-  --shadow: 0 10px 22px rgba(15, 23, 42, 0.06);
-}
-
-*{ box-sizing: border-box; }
-html, body{ width: 100%; overflow-x: hidden; }
-
-body{
-  margin: 0;
-  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-  background: var(--page-bg);
-  color: #111827;
-}
-
-/* ========== TOPBAR ========== */
-.topbar{
-  position: fixed;
-  top: 0; left: 0; right: 0;
-  height: var(--topbar-h);
-  background: #fff;
-  border-bottom: 1px solid var(--border);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 12px;
-  padding: 0 16px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:15px 20px;
+  background:#f2f2f2;
+  
+    position: sticky;
+  top: 0;
   z-index: 1000;
+
 }
 
-.topbar-left{
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  min-width: 220px;
+/* Desktop menyu */
+.menu{
+  list-style:none;
+  display:flex;
+  gap:20px;
 }
 
-.hamburger{
-  border: 1px solid var(--border);
-  background: #fff;
-  border-radius: 10px;
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  display: none; /* desktopda gizli */
+.menu a{
+  text-decoration:none;
+  color:#000;
+  font-weight:500;
 }
 
-.brand{
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.brand-icon{
-  width: 34px;
-  height: 34px;
-  border-radius: 10px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  background: #eef2ff;
-  font-weight: 800;
-}
-.brand-text{
-  font-size: 26px;
-  font-weight: 900;
-  letter-spacing: .2px;
-}
+/* ===== Mobil (0–768) ===== */
+@media (max-width:768px){
+  .nav{
+    flex-direction:column;
+    align-items:flex-start;
+  }
 
-.topbar-center{
-  flex: 1;
-  max-width: 760px;
-}
+  .menu{
+    flex-direction:column;
+    width:100%;
+    margin-top:15px;
+  }
 
-.search{
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  background: #f8fafc;
-  border: 1px solid var(--border);
-  border-radius: 12px;
-  padding: 10px 12px;
+  .menu li{
+    width:100%;
+    padding:10px 0;
+    border-top:1px solid #ddd;
+  }
+  
 }
-.search input{
-  width: 100%;
-  border: none;
-  outline: none;
-  background: transparent;
-  font-size: 15px;
-}
-
-.topbar-right{
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 14px;
-  min-width: 180px;
-}
-
-.icon-btn{
+.hero{
   position: relative;
-  border: none;
-  background: transparent;
-  cursor: pointer;
-  font-size: 18px;
-  padding: 6px;
-}
-.notif-dot{
-  position: absolute;
-  top: 4px; right: 4px;
-  width: 8px; height: 8px;
-  background: #22c55e;
-  border-radius: 999px;
-  border: 2px solid #fff;
-}
-
-.user{
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-.user-name{ font-weight: 600; }
-.avatar{
-  width: 34px; height: 34px;
-  border-radius: 999px;
-  object-fit: cover;
-}
-
-
-.sidebar{
-  position: fixed;
-  top: var(--topbar-h);
-  left: 0;
-  bottom: 0;
-  width: var(--sidebar-w);
-  background: var(--sidebar-bg);
-  color: var(--sidebar-text);
-  padding: 18px 14px;
-  overflow-y: auto;
-}
-
-.sidebar-section{
-  margin: 12px 10px 8px;
-  font-size: 12px;
-  text-transform: uppercase;
-  letter-spacing: .12em;
-  color: var(--sidebar-muted);
-}
-
-.nav{
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-  padding: 0 6px;
-}
-
-.nav-item{
-  text-decoration: none;
-  color: var(--sidebar-text);
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  padding: 10px 12px;
-  border-radius: 12px;
-}
-.nav-item:hover{ background: rgba(255,255,255,.06); }
-.nav-item.active{
-  background: rgba(255,255,255,.08);
-  outline: 1px solid rgba(255,255,255,.08);
-}
-
-.nav-left{
-  display: flex;
-  align-items: center;
-  gap: 10px;
-  min-width: 0;
-}
-.nav-ico{
-  width: 26px; height: 26px;
-  border-radius: 8px;
-  background: rgba(255,255,255,.10);
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 12px;
-  flex: 0 0 26px;
-}
-.nav-label{
-  white-space: nowrap;
+  width: 100%;
+  height: clamp(200px, 35vw, 400px);
   overflow: hidden;
-  text-overflow: ellipsis;
-}
-.nav-pill{
-  font-size: 11px;
-  padding: 2px 8px;
-  border-radius: 999px;
-  background: rgba(255,255,255,.12);
-  color: #fff;
-  flex: 0 0 auto;
+  background:white;
+  border-radius: 16px;
 }
 
+/* ===== ŞƏKİL ===== */
+.hero-img{
+  position: absolute;
+  right: 0;
+  bottom: 0;
 
-.main{
-  margin-left: var(--sidebar-w);
-  padding: 22px;
-  padding-top: calc(var(--topbar-h) + 22px);
-  min-height: 100vh;
-  width: auto; 
+  width: clamp(180px, 30vw, 300px);
+  height: auto;
+
+  /* TAM soldan başlasın */
+  transform: translateX(-100vw);
+
+  animation: imageIn 4s ease-out forwards;
+  z-index: 1;
 }
 
+/* ===== YAZI ===== */
+.hero-text{
+  position: relative;
+  z-index: 2;
+  padding: clamp(20px, 4vw, 40px);
+  color: rgb(12, 10, 10);
+  max-width: 60ch;
 
-.dashboard-grid{
-  width: 100%;
-  margin: 0;                 
-  display: grid;
-  gap: 18px;
-  justify-content: stretch; 
-  align-content: start;
+  opacity: 0;
+  transform: translateY(20px);
+  animation: textFade 1.2s ease forwards;
+  animation-delay: 4s; /* şəkil çatandan sonra */
 }
 
-.card{
-  background: var(--card-bg);
-  border: 1px solid var(--border);
-  border-radius: 14px;
-  box-shadow: var(--shadow);
-  /* sən istəmişdin rəng olsun deyə */
-  background: #20c65a;
-}
-
-.card--sm{ min-height: 240px; }
-.card--wide{ min-height: 320px; }
-.card--tall{ min-height: 320px; }
-
-/* ========== RESPONSIVE ========== */
-/* 0 - 492 */
-@media (max-width: 492px){
-  .hamburger{ display: inline-flex; }
-
-  .sidebar{ display: none; }
-  .main{
-    margin-left: 0;
-    padding: 14px;
-    padding-top: calc(var(--topbar-h) + 14px);
+/* ===== ANIMATIONS ===== */
+@keyframes imageIn{
+  from{
+    transform: translateX(-100vw); /* tam ekranın solundan */
   }
-
-  .dashboard-grid{ grid-template-columns: 1fr; }
-  .topbar-center{ display: none; } /* telefonda search gizlənsin */
-  .user-name{ display: none; }
-  .brand-text{ font-size: 22px; }
+  to{
+    transform: translateX(0); /* sağa dirənir */
+  }
 }
 
-/* 493 - 768 */
-@media (min-width: 493px) and (max-width: 768px){
-  :root{ --sidebar-w: 220px; }
-
-  .hamburger{ display: none; }
-  .user-name{ display: none; }
-
-  .dashboard-grid{ grid-template-columns: repeat(2, 1fr); }
-  .card--wide{ grid-column: span 2; }
+@keyframes textFade{
+  to{
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
-
-/* 769 - 1200 */
-@media (min-width: 769px) and (max-width: 1200px){
-  :root{ --sidebar-w: 240px; }
-
-  .dashboard-grid{ grid-template-columns: repeat(3, 1fr); }
-  .card--wide{ grid-column: span 2; }
-}
-
-/* 1200+ */
-@media (min-width: 1201px){
-  :root{ --sidebar-w: 260px; }
-
-  .dashboard-grid{ grid-template-columns: repeat(3, 1fr); }
-  .card--wide{ grid-column: span 2; }
-}
-
-/* ================== DASHBOARD GRID ================== */
-.dashboard-grid{
-  width: 100%;
-  margin: 0;               /* 0 auto YOX */
-  display: grid;
-  gap: 18px;
-}
-
-/* Kartlar */
-.card{
-  background:#22c55e;
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  box-shadow: var(--shadow);
-}
-
-/* ölçülər */
-.card--sm{ min-height: 240px; }
-.card--wide{ min-height: 320px; }
-.card--tall{ min-height: 320px; }
-
-/* ================== RESPONSIVE BREAKPOINTS ================== */
-
-/* 0 - 492 */
-@media (max-width: 492px){
-  :root{
-    --sidebar-w: 0px; /* mobil: sidebar gizli kimi */
-  }
-
-  .sidebar{ display: none; }
-
-  .topbar{
-    grid-template-columns: 1fr;
-    height: auto;
-    padding: 10px 12px;
-    gap: 10px;
-  }
-
-  .brand-text{ font-size: 22px; }
-  .user-name{ display: none; }
-
-  .main{
-    margin-left: 0;
-    width: 100%;
-    padding: 14px;
-    padding-top: calc(var(--topbar-h) + 14px);
-  }
-
-  .dashboard-grid{
-    grid-template-columns: 1fr;
-  }
-
-  .card--wide{ min-height: 260px; }
-  .card--tall{ min-height: 260px; }
-}
-
-/* 493 - 768 */
-@media (min-width: 493px) and (max-width: 768px){
-  :root{
-    --sidebar-w: 220px;
-  }
-
-  .topbar{
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .user-name{ display: none; }
-
-  .dashboard-grid{
-    grid-template-columns: repeat(2, minmax(220px, 1fr));
-  }
-
-  /* wide kart 2 kolon tutsun */
-  .card--wide{ grid-column: span 2; }
-}
-
-/* 769 - 1200 */
-@media (min-width: 769px) and (max-width: 1200px){
-  :root{
-    --sidebar-w: 240px;
-  } 
-
-  .dashboard-grid{
-    grid-template-columns: repeat(3, minmax(220px, 1fr));
-  }
-
-  .card--wide{ grid-column: span 2; }
-}
-
-/* 1200+ */
-@media (min-width: 1201px){
-  :root{
-    --sidebar-w: 260px;
-  }
-
-  .dashboard-grid{
-    grid-template-columns: repeat(3, minmax(240px, 1fr));
-  }
-
-  .card--wide{ grid-column: span 2; }
-}}
