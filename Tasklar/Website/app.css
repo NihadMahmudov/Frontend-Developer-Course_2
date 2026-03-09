@@ -1,0 +1,188 @@
+body{
+    background-color: rgba(4, 28, 33, 0.945);
+}
+#Head_Photo{
+
+background-color: antiquewhite;
+ width: 1000px; ;
+ height: 150px; ;
+ margin: 0 auto;
+ margin-bottom: 10px;
+ background-size: cover;
+   background-image: url(/WhatsApp\ Şəkil\ 2025-11-28\ saat\ 13.41.10_24ff7e41.jpg); 
+   
+}
+#Navbar{
+    display: flex;
+    text-align: center;
+    width:1000px ;
+    height: 50px;
+    background-color: rgba(4, 28, 33, 0.878);
+    margin: 0 auto;
+}
+
+#Block-1{
+    height: 50px; ;
+    width: 166px; ;
+    color: aliceblue;
+    
+}
+
+#Block-2{
+    height: 50px; ;
+    width: 166px; ;
+    color: aliceblue;
+}
+
+#Block-3{
+    height: 50px; ;
+    width: 166px; ;
+    color: aliceblue;
+}
+
+#Block-4{
+  height: 50px; ;
+width: 166px; ;  
+color: aliceblue;
+}
+
+#Block-5{
+    height: 50px; ;
+    width: 166px; ;
+    color: aliceblue;
+}
+
+#Block-6{
+    height: 50px; ;
+    width: 166px; ;
+    color: aliceblue;
+}
+
+#Bo-dy{
+    margin:0 auto;
+    margin-top: 10px;
+    display: flex;
+    width: 1000px;
+    height: 490px;
+
+}
+
+#Main-block{
+width: 200px;
+height: 490px;
+
+
+
+}
+
+#Gallery{
+    width: 800px;
+    height: 490px;
+
+}
+
+#Head-Tagg{
+width: 200px;
+height: 45px;
+text-align: center;
+
+color: aliceblue;
+
+}
+
+
+#List-block{
+    width: 200px;
+    height:200px ;
+color: aliceblue;
+}
+
+#head-tagg2{
+width: 200px;
+height: 45px;
+text-align: center;
+
+color: aliceblue;
+
+}
+
+#Lorem-block{
+   padding-left: 5px;
+    width: 195px;
+    height: 128.5px;
+
+    color: aliceblue;
+}
+
+#Gallery-Heder{
+width: 800px;
+height: 45px;
+color: aliceblue;
+padding-left: 5px;
+
+
+}
+
+#Lorem-block2{
+    width: 800px;
+    height: 150px; 
+    color: aliceblue;
+    padding-left: 5px;
+}
+#Subscription-service{
+    width: 800px;
+    height: 240px;
+    
+    display: flex;
+}
+
+#head-Subscription{
+    width: 400px;
+    height: 45px; 
+    padding-left: 5px;
+    color: aliceblue;
+}
+
+#Lorem-block3{
+    width: 376px;
+    height: 140px;
+    color: aliceblue;
+padding-left: 5px;
+}
+
+#read-more{
+    width: 90px;
+    height: 30px;
+    text-align: center;
+    background-color: aliceblue;
+   
+   
+}
+#a1{
+    margin-top: 0;
+}
+
+#head-service{
+    width: 400px;
+    height: 45px;
+   color: aliceblue;
+     padding-left: 5px;
+}
+#Lorem-block4{
+    width: 400px;
+    height: 140px;
+   
+    padding-left: 5pt;
+    color: aliceblue;
+}
+#a2{
+    margin-top: 0;
+}
+#read-more2{
+    width: 90px;
+    height: 30px;
+    text-align: center;
+    background-color: aliceblue;
+    
+   
+}
