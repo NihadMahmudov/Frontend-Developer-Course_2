@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="az">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coffee Shop</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<script>
+  const btn = document.querySelector(".hero-text button");
+
+  btn.addEventListener("click", () => {
+    alert("Sifariş üçün bizimlə əlaqə saxlayın ☕");
+    document
+      .querySelector("#contact")
+      .scrollIntoView({ behavior: "smooth" });
+  });
+</script>
+
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">CoffeeShop</div>
+      <ul>
+        <li><a href="#home">Ana Səhifə</a></li>
+        <li><a href="#products">Menyu</a></li>
+        <li><a href="#about">Haqqımızda</a></li>
+        <li><a href="#contact">Əlaqə</a></li>
+        <li>
+          <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        </li>
+        <li>
+          <a href="https://www.google.com/maps" target="_blank">Xəritə</a>
+        </li>
+
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-text">
+      <h1>Ən Dadlı Qəhvələr</h1>
+      <p>Gününə enerji qatacaq təzə və keyfiyyətli qəhvələr burada.</p>
+      <button>Sifariş et</button>
+    </div>
+  </section>
+
+  <section class="products" id="products">
+    <h2>Məşhur Qəhvələr</h2>
+    <div class="product-grid">
+      <div class="product">
+        <img src="/7a29dfc903d98c6ba13b687ef1fa1d1a.jpg" alt="Espresso">
+        <div class="product-content">
+          <h3>Espresso</h3>
+          <p>Güclü və klassik dad</p>
+          <div class="price">5 AZN</div>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="/1d36a67af83f6f27e944070bc7743801.jpg" alt="Latte">
+        <div class="product-content">
+          <h3>Latte</h3>
+          <p>Yumşaq və kremli</p>
+          <div class="price">6 AZN</div>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="/download (1).jpg" alt="Cappuccino">
+        <div class="product-content">
+          <h3>Cappuccino</h3>
+          <p>Köpüklü klassika</p>
+          <div class="price">6.5 AZN</div>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="/images.jpg" alt="Mocha">
+        <div class="product-content">
+          <h3>Mocha</h3>
+          <p>Şokoladlı və dadlı</p>
+          <div class="price">7 AZN</div>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="/download.jpg" alt="Americano">
+        <div class="product-content">
+          <h3>Americano</h3>
+          <p>Sadə və təravətli</p>
+          <div class="price">5.5 AZN</div>
+        </div>
+      </div>
+
+      <div class="product">
+        <img src="https://images.unsplash.com/photo-1541167760496-1628856ab772" alt="Macchiato">
+        <div class="product-content">
+          <h3>Macchiato</h3>
+          <p>Köpüklü və yüngül</p>
+          <div class="price">6.5 AZN</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about" id="about">
+    <h2>Haqqımızda</h2>
+    <p style="padding:0 80px;">Biz CoffeeShop olaraq ən keyfiyyətli qəhvələri təqdim edirik. Sizi hər zaman rahat bir
+      mühitdə qarşılayırıq.</p>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Əlaqə</h2>
+    <p style="padding:0 80px;">Əlaqə üçün info@coffeeshop.az ünvanına yaza bilərsiniz.</p>
+  </section>
+
+  <footer>
+    <p>© 2025 CoffeeShop. Bütün hüquqlar qorunur.</p>
+  </footer>
+
+</body>
+
+</html>
